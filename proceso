@@ -1,0 +1,7 @@
+Un proceso, digamos jugar un juego, esta en estado "NEW" al haber sido instalado, de ahi pasa al estado "READY" despues de que el sistema lo permite
+desde este estado, al inicializar el juego entra a estado "RUNNING", siempre y cuando el tiempo que le asigno el sistema se cumpla,
+de aqui, pueden pasar varias cosas, en caso de que se interrumpa, regrese al estado "READY" y hay que volver a iniciarlo para que entre a estado
+"RUNNING" de nuevo, habra ocasiones en las que se necesita una interaccion del usuario como dar ACEPTO en los terminos y condiciones, en ese caso,
+se entra en estado "WAITING", mientras el usuario toma una decision. Una vez que el usuario interactua con dicha opcion, se regresa al status "READY"
+de nuevoo, y de ahi pasa otra vez a "RUNNING", y, si no hay mas problemas, deberia de entrar a la pantalla principal del juego, lo cual 
+se le conoce como estado "TERMINATED"
